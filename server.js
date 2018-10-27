@@ -16,14 +16,14 @@ app.use((req, res, next) => {
   next();
 });
 
-app.use((req, res, next) => {
-  res.render('maintenance.hbs', {
-    pageTitle: 'Maintenance Page',
-    maintenanceMsg: 'This site is currently under maintenance. Please check back later'
-  });
+// app.use((req, res, next) => {
+//   res.render('maintenance.hbs', {
+//     pageTitle: 'Maintenance Page',
+//     maintenanceMsg: 'This site is currently under maintenance. Please check back later'
+//   });
 
-  next()
-});
+//   next()
+// });
 
 app.use(express.static(__dirname + '/public'));
 
