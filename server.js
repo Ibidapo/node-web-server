@@ -38,14 +38,21 @@ hbs.registerHelper('screamIt', (str) => {
 app.get('/', (req, res) => {
   res.render('home.hbs', {
     pageTitle: 'Home Page',
-    welcomeMsg: 'Welcome to my **node-web-server** tutorial exercise ;)'
+    welcomeMsg: 'Welcome to my **node-web-server** tutorial site ;)'
   });
 });
 
 app.get('/about', (req, res) => {
   res.render('about.hbs', {
     pageTitle: 'About Page',
-    aboutMsg: 'Welcome to the about section of **node-web-server** tutorial exercise ;)'
+    aboutMsg: 'Welcome to the about section of **node-web-server** tutorial site ;)'
+  });
+});
+
+app.get('/projects', (req, res) => {
+  res.render('projects.hbs', {
+    pageTitle: 'Projects Page',
+    portfolioMsg: 'Welcome to the portfolio section of **node-web-server** tutorial site ;)'
   });
 });
 
